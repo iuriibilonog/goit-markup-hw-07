@@ -28,20 +28,11 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-}
 
-.form-input-area:focus {
-  border: 1px solid var(--accent-text-color);
-  outline: none;
-}
-
-.form-input-area:focus + .form-icon {
-  fill: var(--accent-text-color);
-}
-
-.form-input-comment-area:focus {
-  border: 1px solid var(--accent-text-color);
-  outline: none;
+  &:focus {
+    border: 1px solid var(--accent-text-color);
+    outline: none;
+  }
 }
 
 .form-input-comment-area {
@@ -51,16 +42,20 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 20px;
-}
 
-.form-input-comment-area::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-  padding-top: 12px;
-  padding-left: 16px;
+  &:focus {
+    border: 1px solid var(--accent-text-color);
+    outline: none;
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    padding-top: 12px;
+    padding-left: 16px;
+  }
 }
 
 .icon-thumb {
@@ -78,6 +73,10 @@
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+
+  .form-input-area:focus + & {
+    fill: var(--accent-text-color);
+  }
 }
 
 .checkbox-text {
@@ -131,10 +130,19 @@
   width: 16px;
   height: 15px;
   margin-right: 7px;
-
   border-radius: 2px;
   border: 2px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  .form-chekbox:checked + & {
+    background-color: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
+    box-shadow: none;
+  }
+
+  .form-chekbox:focus + & {
+    border: 2px solid var(--accent-text-color);
+  }
 }
 
 .checkbox-icon {
@@ -142,16 +150,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.form-chekbox:checked + .checkbox-icon-thumb {
-  background-color: var(--accent-text-color);
-  border: 1px solid var(--accent-text-color);
-  box-shadow: none;
-}
-
-.form-chekbox:focus + .checkbox-icon-thumb {
-  border: 2px solid var(--accent-text-color);
 }
 
 .form-button {

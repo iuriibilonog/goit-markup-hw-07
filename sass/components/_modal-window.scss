@@ -30,8 +30,8 @@
 .closed-btn-icon {
   width: 11px;
   height: 11px;
-}
 
-.closed-button:hover .closed-btn-icon {
-  fill: var(--accent-text-color);
+  .closed-button:hover & {
+    fill: var(--accent-text-color);
+  }
 }

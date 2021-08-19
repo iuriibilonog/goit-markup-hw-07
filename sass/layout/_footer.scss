@@ -1,5 +1,40 @@
 footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .logo {
+    color: var(--white-text-color);
+  }
+
+  .footer-address {
+    color: var(--white-text-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 9px;
+  }
+
+  .footer-contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: var(--accent-text-color);
+    }
+
+    &:focus {
+      color: var(--accent-text-color);
+    }
+  }
 }
 
 .footer {
@@ -7,50 +42,14 @@ footer {
   align-items: baseline;
 }
 
-.container.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-footer .logo {
-  color: var(--white-text-color);
-}
-
 address {
   margin-top: 20px;
 }
 
-footer .footer-address {
-  color: var(--white-text-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin-bottom: 9px;
-}
-
-footer .footer-contacts {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-address-list li:first-child {
-  margin-bottom: 9px;
-}
-
-footer .footer-contacts:hover {
-  color: var(--accent-text-color);
-}
-
-footer .footer-contacts:focus {
-  color: var(--accent-text-color);
+.footer-address-list {
+  & li:first-child {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-info {
@@ -85,10 +84,10 @@ footer .footer-contacts:focus {
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-links-item-link-footer:hover {
-  background-color: var(--accent-text-color);
+  &:hover {
+    background-color: var(--accent-text-color);
+  }
 }
 
 .subscribe {

@@ -12,40 +12,40 @@
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-}
 
-.hero .title {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--white-text-color);
-  max-width: 696px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 30px;
-}
+  .title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+    max-width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
 
-.modal-btn {
-  border: 0;
-  margin: 0;
-  padding: 10px 32px;
-  background-color: var(--accent-text-color);
-  min-width: 200px;
-  min-height: 50px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-}
+  .modal-btn {
+    border: 0;
+    margin: 0;
+    padding: 10px 32px;
+    background-color: var(--accent-text-color);
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
 
-.hero .button-name {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--white-text-color);
+  .button-name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+  }
 }
